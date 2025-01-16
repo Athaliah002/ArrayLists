@@ -1,0 +1,43 @@
+import java.util.ArrayList;
+
+public class DisplayOutput {
+    public static void main(String[] args) {
+        // Create an ArrayList to store student names
+        ArrayList<String> studentNames = new ArrayList<>();
+        studentNames.add("Student 1: John Doe");
+        studentNames.add("Student 2: Jane Smith");
+        studentNames.add("Student 3: Mark Lee");
+        studentNames.add("Student 4: Sarah Johnson");
+        studentNames.add("Student 5: Kevin Brown");
+        studentNames.add("Student 6: Emma Wilson");
+        studentNames.add("Student 7: Olivia Garcia");
+        studentNames.add("Student 8: Liam Martinez");
+        studentNames.add("Student 9: Sophia Davis");
+        studentNames.add("Student 10: Noah Hernandez");
+        
+        // Print 20 asterisks using the method with a parameter
+        printAsterisks(20);
+        
+        // Display student names
+        for (String name : studentNames) {
+            System.out.println(name);
+        }
+        
+        // Print 20 asterisks again
+        printAsterisks(20);
+        
+        // Display programmer's name
+        System.out.println("Programmed by Athaliah");
+        
+        // Print 20 asterisks one last time
+        printAsterisks(20);
+    }
+    
+    // Static method to print a specified number of asterisks
+    public static void printAsterisks(int count) {
+        for (int i = 0; i < count; i++) {
+            System.out.print("*");
+        }
+        System.out.println(); // Move to the next line after printing
+    }
+}
